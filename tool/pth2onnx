@@ -1,0 +1,8 @@
+from ultralytics import YOLO
+
+# Load a model
+model = YOLO("qx_seg_重新/m/weights/best.pt")  # load an official model
+ # load a custom trained model
+
+# Export the model
+model.export(format="onnx")
